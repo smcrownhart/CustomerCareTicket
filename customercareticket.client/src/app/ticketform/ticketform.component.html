@@ -1,0 +1,31 @@
+<form class="ticket-form" [formGroup]="ticketForm">
+  <div class="mx-auto p-2">
+    <label class="text-uppercase">Store Number: </label>
+    <input type="text" formControlName="StoreNumber" />
+  </div>
+  
+  <div class="mx-auto p-2">
+    <label class="text-uppercase">Customer Name: </label>
+    <input type="text" formControlName="CustomerName" />
+  </div>
+  
+  <div class="mx-auto p-2">
+    <label class="text-uppercase">Customer Phone:</label>
+    <input type="text" formControlName="CustomerPhone" />
+  </div>
+  
+  <div class="mx-auto p-2">
+    <label class="text-uppercase">Called: </label>
+    <input type="checkbox" formControlName="Called" />
+  </div>
+  
+  <div class="mx-auto p-2">
+    <label class="text-uppercase">Resolution: </label>
+    <textarea class="from-control" id="Resolution"></textarea>
+    
+  </div>
+  
+</form>
+
+<button type="button" class="btn btn-outline-primary p-2" (click)="onSubmit()">Add Ticket</button>
+

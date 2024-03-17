@@ -1,0 +1,6 @@
+@CustomerCareTicket.Server_HostAddress = http://localhost:7297
+
+GET {{CustomerCareTicket.Server_HostAddress}}/api/Tickets
+Accept: application/json
+
+###
